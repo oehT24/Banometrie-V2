@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buget · REVERSE</title>
+<meta name="description" content="Cei 5.000 €, pe categorii si cheltuieli, cu filtru pe prioritati.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Passion+One&family=Patrick+Hand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="hero page-hero">
+  <span class="spark" style="right: 7%; top: 40%" aria-hidden="true"></span>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="logo" href="index.html">REVERSE</a>
+      <nav class="nav" aria-label="Navigare principala">
+        <a href="problema.html">Problema</a>
+        <a href="inovatia.html">Inovatia</a>
+        <a href="experienta.html">Experienta</a>
+        <a href="simulator.html">Simulator</a>
+        <a href="piata.html">Piata</a>
+        <a href="model.html">Model</a>
+        <a href="buget.html" aria-current="page">Buget</a>
+        <a href="impact.html">Impact</a>
+        <a href="echipa.html">Echipa</a>
+        <a href="riscuri.html">Riscuri</a>
+      </nav>
+    </header>
+  </div>
+</div>
+
+<main>
+
+<section id="buget" class="section">
+  <div class="wedge br" aria-hidden="true"></div>
+  <div class="wrap stack g56">
+    <div class="stack g16 measure">
+      <div class="eyebrow">Buget general si detaliat</div>
+      <h2>Cum impartim cei 5.000 €</h2>
+      <p class="lead">Bugetul este construit pe un plafon de 5.000 €. Din el, 4.800 € sunt repartizati in categorii, inclusiv o rezerva de 450 €, iar 200 € raman nealocati. Deschide o categorie ca sa vezi fiecare cheltuiala, sau scoate o prioritate din calcul ca sa vezi ce ramane.</p>
+    </div>
+
+    <div class="figs">
+      <div class="fig dark"><span class="n">5.000 €</span><span class="k">Plafon total</span></div>
+      <div class="fig"><span class="n">4.800 €</span><span class="k">Total alocat</span></div>
+      <div class="fig"><span class="n">450 €</span><span class="k">Rezerva pentru neprevazute</span></div>
+      <div class="fig"><span class="n">200 €</span><span class="k">Buget nealocat</span></div>
+    </div>
+
+    <div class="stack g24">
+      <div class="stack g12">
+        <span class="k">Ce prioritate includem in calcul?</span>
+        <div class="chips" id="priority-chips" role="group" aria-label="Filtreaza cheltuielile dupa prioritate"></div>
+      </div>
+      <div class="bsum" aria-live="polite"><b id="b-total">4.800 €</b><span id="b-note">din 4.800 € alocati, toate prioritatile incluse</span></div>
+      <div id="budget-rows"></div>
+    </div>
+
+    <div class="rules">
+      <p><b>Caracterul sumelor.</b> Toate valorile sunt estimari orientative, nu oferte ferme si nu cheltuieli deja efectuate. Inainte de implementare, fiecare cost se verifica prin oferte, tarife reale sau documente justificative.</p>
+      <p><b>Rezerva.</b> Cei 450 € se folosesc numai pentru costuri neprevazute, justificate si aprobate de echipa proiectului.</p>
+      <p><b>Cei 200 € nealocati</b> nu sunt inclusi in cheltuielile planificate si nu se considera automat disponibili pentru cheltuire.</p>
+      <p><b>Spatiu si echipamente.</b> Daca sunt oferite gratuit de parteneri, sumele pot fi realocate cu justificare.</p>
+      <p><b>Dezvoltare.</b> Costurile presupun o solutie minima functionala, adecvata unui pilot, nu o platforma complexa construita de la zero.</p>
+      <p><b>Minori si date.</b> Orice activitate cu minori are informare adecvata si acordurile necesare. Colectam minimul de date, cu acces limitat, fara informatii sensibile.</p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><nav class="pager" aria-label="Pagini"><a href="model.html">← Model</a><a href="impact.html">Impact →</a></nav></div>
+
+</main>
+
+<footer class="mini-footer">
+  <div class="wrap footer">
+    <span>REVERSE | Educatie financiara. Decizii mai bune. Acces mai echitabil.</span>
+    <span>Colegiul National „Ion Luca Caragiale”. Exemplele numerice si ofertele sunt ilustrative; sumele din buget sunt estimari orientative in euro.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

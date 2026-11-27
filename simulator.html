@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulator · REVERSE</title>
+<meta name="description" content="Financial Decision Engine: alege un scenariu si vezi ce ramane din buget.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Passion+One&family=Patrick+Hand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="hero page-hero">
+  <span class="spark" style="right: 7%; top: 40%" aria-hidden="true"></span>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="logo" href="index.html">REVERSE</a>
+      <nav class="nav" aria-label="Navigare principala">
+        <a href="problema.html">Problema</a>
+        <a href="inovatia.html">Inovatia</a>
+        <a href="experienta.html">Experienta</a>
+        <a href="simulator.html" aria-current="page">Simulator</a>
+        <a href="piata.html">Piata</a>
+        <a href="model.html">Model</a>
+        <a href="buget.html">Buget</a>
+        <a href="impact.html">Impact</a>
+        <a href="echipa.html">Echipa</a>
+        <a href="riscuri.html">Riscuri</a>
+      </nav>
+    </header>
+  </div>
+</div>
+
+<main>
+
+<section id="simulator" class="section" style="background: var(--blush)">
+  <div class="wrap stack g56">
+    <div class="stack g16 measure">
+      <div class="eyebrow">Financial Decision Engine</div>
+      <h2>Alege un scenariu si vezi ce ramane din buget</h2>
+      <p class="lead">Nu vrem ca elevul sa aleaga pur si simplu cel mai mic pret. Vrem sa inteleaga cum sa ia o decizie financiara corecta. Exemplu complet: elevul are 600 lei disponibili, dintre care vrea sa pastreze cel putin 200 lei pentru urgente, si trebuie sa procure un dispozitiv pentru un proiect.</p>
+    </div>
+
+    <div class="pill">
+      <div class="sim-grid">
+        <div class="scenarios">
+          <button class="scenario" type="button" data-id="nou" aria-pressed="false"><span class="s-name">Produs nou</span><span class="s-cost">500 lei</span></button>
+          <button class="scenario" type="button" data-id="recond" aria-pressed="true"><span class="s-name">Produs reconditionat</span><span class="s-cost">340 lei</span></button>
+          <button class="scenario" type="button" data-id="imprumut" aria-pressed="false"><span class="s-name">Imprumut de la scoala</span><span class="s-cost">40 lei</span></button>
+          <p class="note" style="color: var(--tan); margin-top: 8px">Costurile includ transportul si costurile de acces din exemplul ilustrativ. Tabelul nu dovedeste ca imprumutul este intotdeauna alegerea optima: trebuie analizate disponibilitatea, timpul de acces si adecvarea produsului. Tocmai acesta este exercitiul de educatie financiara.</p>
+        </div>
+
+        <div class="result" aria-live="polite">
+          <div class="stack"><span class="k">Scenariul ales</span><span class="res-name" id="res-name">Produs reconditionat</span></div>
+          <div class="metrics">
+            <div class="metric"><span class="k">Cost total</span><span class="val" id="res-cost">340 lei</span></div>
+            <div class="metric"><span class="k">Bani ramasi</span><span class="val" id="res-left">260 lei</span></div>
+          </div>
+          <div>
+            <div class="meter"><div class="meter-fill" id="meter-fill"></div><div class="meter-mark" style="left: 66.67%"></div></div>
+            <div class="meter-scale"><span>0 lei</span><span>limita pentru rezerva: 400 lei</span><span>600 lei</span></div>
+          </div>
+          <div class="verdict" id="res-verdict">Respecta rezerva tinta de 200 lei</div>
+          <div class="stack"><span class="k">De verificat inainte de decizie</span><span id="res-check">Stare, garantie, durata de viata</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stack g16">
+      <h3>Cele cinci dimensiuni analizate pentru fiecare alegere</h3>
+      <div class="grid-5">
+        <div class="dim"><h4>Cost total de detinere sau utilizare</h4><p>Pret de cumparare + transport + intretinere + comisioane + costuri obligatorii ulterioare, minus valoarea reziduala estimata, atunci cand este relevanta.</p></div>
+        <div class="dim"><h4>Cash-flow si lichiditate</h4><p>Isi permite elevul aceasta cheltuiala fara sa-si compromita celelalte obiective financiare?</p></div>
+        <div class="dim"><h4>Cost de oportunitate</h4><p>Ce alte optiuni pierde daca alege sa cheltuiasca banii acum?</p></div>
+        <div class="dim"><h4>Risc si incertitudine</h4><p>Ce se intampla daca produsul se defecteaza, apar cheltuieli suplimentare sau o oferta nu respecta conditiile promise?</p></div>
+        <div class="dim"><h4>Randament si utilizarea economiilor</h4><p>Daca elevul nu cheltuieste o suma, ce poate face responsabil cu ea? O poate pastra ca rezerva, economisi pentru un obiectiv sau compara cu un produs de economisire adecvat.</p></div>
+      </div>
+    </div>
+
+    <div class="pill stack g24">
+      <div class="stack g12 measure">
+        <h3>Money after the decision</h3>
+        <p>Ce se intampla cu banii dupa luarea unei decizii financiare? Adolescentul isi gestioneaza bugetul de 600 lei intr-un mod echilibrat:</p>
+      </div>
+      <div class="split" role="img" aria-label="Distributia celor 600 lei: 300 lei cheltuieli personale, 200 lei economii, 100 lei fond de rezerva">
+        <span class="a" style="flex: 3">300 lei</span><span class="b" style="flex: 2">200 lei</span><span class="c" style="flex: 1">100 lei</span>
+      </div>
+      <div class="grid-3" style="gap: 16px">
+        <p><b class="tan">300 lei · Cheltuieli personale.</b> Alimente, transport, produse necesare si mici dorinte.</p>
+        <p><b class="tan">200 lei · Economii.</b> Bani pusi deoparte pentru un obiectiv personal sau o achizitie mai importanta.</p>
+        <p><b class="tan">100 lei · Fond de rezerva.</b> Bani pastrati pentru cheltuieli neasteptate sau situatii neprevazute.</p>
+      </div>
+      <p>Daca pastreaza aceeasi strategie timp de 6 luni, economiseste <b class="tan">1.200 lei</b>, acumuleaza <b class="tan">600 lei</b> in fondul de rezerva si isi formeaza un obicei constant de economisire.</p>
+      <p class="big-quote" style="font-size: clamp(22px, 2.6vw, 32px)">O decizie financiara nu se opreste in momentul in care alegem ce cumparam. Adevarata ei valoare se vede in ceea ce ne ramane dupa ce cheltuim si in oportunitatile pe care ni le ofera banii economisiti.</p>
+      <p class="note">Modulul foloseste doar dobanzi, taxe si conditii verificate la data elaborarii si nu recomanda automat un produs bancar.</p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><nav class="pager" aria-label="Pagini"><a href="experienta.html">← Experienta</a><a href="piata.html">Piata →</a></nav></div>
+
+</main>
+
+<footer class="mini-footer">
+  <div class="wrap footer">
+    <span>REVERSE | Educatie financiara. Decizii mai bune. Acces mai echitabil.</span>
+    <span>Colegiul National „Ion Luca Caragiale”. Exemplele numerice si ofertele sunt ilustrative; sumele din buget sunt estimari orientative in euro.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
